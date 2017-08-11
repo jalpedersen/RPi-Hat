@@ -11,7 +11,7 @@ This is a project template for a
 
 This is based on work of [xesscorp](https://github.com/xesscorp/RPi_Hat_Template)
 
-This version includes a CAT22C32 EEPROM for ID EEPROM as well as DS1340 RTC for
+This version includes a CAT24C32 EEPROM for ID EEPROM as well as DS1340 RTC for
 keeping track of time.
  
 
