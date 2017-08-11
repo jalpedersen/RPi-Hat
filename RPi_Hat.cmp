@@ -1,0 +1,51 @@
+Cmp-Mod V01 Created by PcbNew   date = Tuesday, 08 August 2017 'pmt' 22:53:49
+
+BeginCmp
+TimeStamp = 5516AEA0
+Path = /5515D395/5516AE26
+Reference = J2;
+ValeurCmp = RPi_GPIO;
+IdModule  = RPi_Hat:Pin_Header_Straight_2x20;
+EndCmp
+
+BeginCmp
+TimeStamp = 55174A29
+Path = /5515D395/5515D39E
+Reference = J1;
+ValeurCmp = RPi_GPIO;
+IdModule  = RPi_Hat:Samtec_HLE-120-02-XXX-DV-BE-XX-XX;
+EndCmp
+
+BeginCmp
+TimeStamp = 5515DEA9
+Path = 
+Reference = [NoRef];
+ValeurCmp = [NoVal];
+IdModule  = RPi_Hat:RPi_Hat_Mounting_Hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 55169DC9
+Path = 
+Reference = [NoRef];
+ValeurCmp = [NoVal];
+IdModule  = RPi_Hat:RPi_Hat_Mounting_Hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 5515DECC
+Path = 
+Reference = [NoRef];
+ValeurCmp = [NoVal];
+IdModule  = RPi_Hat:RPi_Hat_Mounting_Hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 5515DEBF
+Path = 
+Reference = [NoRef];
+ValeurCmp = [NoVal];
+IdModule  = RPi_Hat:RPi_Hat_Mounting_Hole;
+EndCmp
+
+EndListe
