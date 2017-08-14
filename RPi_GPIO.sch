@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:RPi_Hat-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -92,7 +91,6 @@ LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
 LIBS:cat24c32
-LIBS:ds1340
 LIBS:RPi_Hat-cache
 EELAYER 25 0
 EELAYER END
@@ -178,9 +176,9 @@ Text GLabel 9200 2800 2    60   Input ~ 0
 Text GLabel 9200 2900 2    60   Input ~ 0
 GND
 Text GLabel 9200 3000 2    60   Input ~ 0
-Pin8
+TX
 Text GLabel 9200 3100 2    60   Input ~ 0
-Pin10
+RX
 Text GLabel 9200 3200 2    60   Input ~ 0
 Pin12
 Text GLabel 9200 3300 2    60   Input ~ 0
@@ -250,9 +248,9 @@ Text GLabel 5750 2900 2    60   Input ~ 0
 Text GLabel 5750 3000 2    60   Input ~ 0
 GND
 Text GLabel 5750 3100 2    60   Input ~ 0
-Pin8
+TX
 Text GLabel 5750 3200 2    60   Input ~ 0
-Pin10
+RX
 Text GLabel 5750 3300 2    60   Input ~ 0
 Pin12
 Text GLabel 5750 3400 2    60   Input ~ 0
@@ -333,34 +331,6 @@ Text GLabel 3750 6200 0    60   Input ~ 0
 SCL
 Text GLabel 4350 7100 3    60   Input ~ 0
 GND
-$Comp
-L R R1
-U 1 1 598AB3BE
-P 5200 6200
-F 0 "R1" V 5280 6200 50  0000 C CNN
-F 1 "R" V 5200 6200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5130 6200 50  0001 C CNN
-F 3 "" H 5200 6200 50  0001 C CNN
-	1    5200 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CAP C1
-U 1 1 598AB3EF
-P 5800 6200
-F 0 "C1" V 5900 6350 50  0000 C CNN
-F 1 "CAP" V 5900 6050 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5800 6200 50  0001 C CNN
-F 3 "" H 5800 6200 50  0001 C CNN
-	1    5800 6200
-	0    -1   -1   0   
-$EndComp
-Text GLabel 6050 6200 2    60   Input ~ 0
-GND
-Text Notes 5900 6450 2    60   ~ 0
-100nf
-Text Notes 5300 6350 2    60   ~ 0
-10K
 Text Notes 3050 5950 2    60   ~ 0
 32.768Hz
 $Comp
@@ -454,10 +424,6 @@ Wire Wire Line
 	4350 7100 4350 7500
 Wire Wire Line
 	4350 7500 4950 7500
-Wire Wire Line
-	4950 6200 5050 6200
-Wire Wire Line
-	5350 6200 5550 6200
 Wire Wire Line
 	3000 2150 2650 2150
 Wire Wire Line
@@ -558,23 +524,51 @@ $EndComp
 $Comp
 L CONN_02X10 J7
 U 1 1 598D0311
-P 2600 5150
-F 0 "J7" H 2600 5700 50  0000 C CNN
-F 1 "CONN_02X10" V 2600 5150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2600 3950 50  0001 C CNN
-F 3 "" H 2600 3950 50  0001 C CNN
-	1    2600 5150
+P 2800 5150
+F 0 "J7" H 2800 5700 50  0000 C CNN
+F 1 "CONN_02X10" V 2800 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 2800 3950 50  0001 C CNN
+F 3 "" H 2800 3950 50  0001 C CNN
+	1    2800 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_02X10 J8
 U 1 1 598D0360
-P 3200 5150
-F 0 "J8" H 3200 5700 50  0000 C CNN
-F 1 "CONN_02X10" V 3200 5150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 3200 3950 50  0001 C CNN
-F 3 "" H 3200 3950 50  0001 C CNN
-	1    3200 5150
+P 3650 5200
+F 0 "J8" H 3650 5750 50  0000 C CNN
+F 1 "CONN_02X10" V 3650 5200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 3650 4000 50  0001 C CNN
+F 3 "" H 3650 4000 50  0001 C CNN
+	1    3650 5200
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4950 6200
+$Comp
+L CONN_01X04 J9
+U 1 1 59918E85
+P 8700 5800
+F 0 "J9" H 8700 6050 50  0000 C CNN
+F 1 "CONN_01X04" V 8800 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8700 5800 50  0001 C CNN
+F 3 "" H 8700 5800 50  0001 C CNN
+	1    8700 5800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8500 5650 0    60   Input ~ 0
+3.3V
+Text GLabel 8500 5750 0    60   Input ~ 0
+GND
+Text GLabel 8500 5850 0    60   Input ~ 0
+TX
+Text GLabel 8500 5950 0    60   Input ~ 0
+RX
+Text GLabel 3400 4750 0    60   Input ~ 0
+3.3V
+Text GLabel 2250 4700 2    60   Input ~ 0
+GND
+Text GLabel 1750 3850 0    60   Input ~ 0
+3.3V
+Text GLabel 3450 3850 2    60   Input ~ 0
+GND
 $EndSCHEMATC

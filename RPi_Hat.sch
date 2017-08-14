@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:RPi_Hat-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -92,7 +91,6 @@ LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
 LIBS:cat24c32
-LIBS:ds1340
 LIBS:RPi_Hat-cache
 EELAYER 25 0
 EELAYER END
