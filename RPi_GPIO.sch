@@ -622,4 +622,62 @@ GND
 Wire Wire Line
 	2200 7250 1950 7250
 Connection ~ 2200 7000
+Text GLabel 6300 1450 2    60   Input ~ 0
+3.3V
+Text GLabel 5350 1650 0    60   Input ~ 0
+Pin33
+Text GLabel 5350 1450 0    60   Input ~ 0
+Pin31
+Text GLabel 5350 1250 0    60   Input ~ 0
+Pin29
+$Comp
+L R R1
+U 1 1 59938267
+P 5500 1250
+F 0 "R1" V 5580 1250 50  0000 C CNN
+F 1 "R" V 5500 1250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 1250 50  0001 C CNN
+F 3 "" H 5500 1250 50  0001 C CNN
+	1    5500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5993838B
+P 5500 1450
+F 0 "R5" V 5580 1450 50  0000 C CNN
+F 1 "R" V 5500 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 1450 50  0001 C CNN
+F 3 "" H 5500 1450 50  0001 C CNN
+	1    5500 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 599383E3
+P 5500 1650
+F 0 "R6" V 5580 1650 50  0000 C CNN
+F 1 "R" V 5500 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5430 1650 50  0001 C CNN
+F 3 "" H 5500 1650 50  0001 C CNN
+	1    5500 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 1250 5900 1250
+Wire Wire Line
+	5650 1450 5900 1450
+Wire Wire Line
+	5650 1650 5900 1650
+$Comp
+L LED_RABG D1
+U 1 1 59938EE6
+P 6100 1450
+F 0 "D1" H 6100 1820 50  0000 C CNN
+F 1 "LED_RABG" H 6100 1100 50  0000 C CNN
+F 2 "" H 6100 1400 50  0001 C CNN
+F 3 "" H 6100 1400 50  0001 C CNN
+	1    6100 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
