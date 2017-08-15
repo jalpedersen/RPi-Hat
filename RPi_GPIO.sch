@@ -304,13 +304,13 @@ $EndComp
 $Comp
 L Crystal Y1
 U 1 1 598A4A0E
-P 2850 6150
-F 0 "Y1" H 2850 6300 50  0000 C CNN
-F 1 "Crystal" H 2850 6000 50  0000 C CNN
-F 2 "Crystals:Crystal_SMD_EuroQuartz_EQ161-2pin_3.2x1.5mm_HandSoldering" H 2850 6150 50  0001 C CNN
-F 3 "" H 2850 6150 50  0001 C CNN
-	1    2850 6150
-	1    0    0    -1  
+P 2850 6850
+F 0 "Y1" H 2850 7000 50  0000 C CNN
+F 1 "Crystal" H 2850 6700 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_EuroQuartz_EQ161-2pin_3.2x1.5mm_HandSoldering" H 2850 6850 50  0001 C CNN
+F 3 "" H 2850 6850 50  0001 C CNN
+	1    2850 6850
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DS1307Z+ U1
@@ -323,7 +323,7 @@ F 3 "" H 4350 6500 50  0001 C CNN
 	1    4350 6500
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 5900 1    60   Input ~ 0
+Text GLabel 4350 5750 1    60   Input ~ 0
 3.3V
 Text GLabel 3750 6400 0    60   Input ~ 0
 SDA
@@ -410,47 +410,6 @@ Text Notes 3350 2000 0    60   ~ 0
 3.9K
 Text Notes 3700 2000 0    60   ~ 0
 3.9K
-Wire Wire Line
-	3750 6700 2700 6700
-Wire Wire Line
-	2700 6700 2700 6150
-Wire Wire Line
-	3750 6900 3000 6900
-Wire Wire Line
-	3000 6900 3000 6150
-Wire Wire Line
-	4950 6800 4950 7200
-Wire Wire Line
-	4350 7100 4350 7500
-Wire Wire Line
-	4350 7500 4950 7500
-Wire Wire Line
-	3000 2150 2650 2150
-Wire Wire Line
-	3000 1350 3000 2150
-Wire Wire Line
-	2700 1600 3000 1600
-Connection ~ 3000 1600
-Wire Wire Line
-	2650 2550 4050 2550
-Wire Wire Line
-	2650 2750 4050 2750
-Wire Wire Line
-	3250 1700 3250 1350
-Wire Wire Line
-	3600 1350 3600 1700
-Wire Wire Line
-	3950 1350 3950 1700
-Wire Wire Line
-	3950 2750 3950 2000
-Connection ~ 3950 2750
-Wire Wire Line
-	3600 2000 3600 2550
-Connection ~ 3600 2550
-Wire Wire Line
-	3250 2350 3250 2000
-Wire Wire Line
-	2650 2350 3250 2350
 $Comp
 L Jumper_NO_Small JP1
 U 1 1 598CD8A4
@@ -462,13 +421,8 @@ F 3 "" H 3200 3050 50  0001 C CNN
 	1    3200 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 3050 3100 2350
-Connection ~ 3100 2350
 Text GLabel 3700 3050 2    60   Input ~ 0
 GND
-Wire Wire Line
-	3300 3050 3700 3050
 Text GLabel 2200 1600 0    60   Input ~ 0
 GND
 Text GLabel 3250 1350 1    60   Input ~ 0
@@ -571,4 +525,101 @@ Text GLabel 1750 3850 0    60   Input ~ 0
 3.3V
 Text GLabel 3450 3850 2    60   Input ~ 0
 GND
+Text GLabel 4950 5800 2    60   Input ~ 0
+GND
+$Comp
+L C C4
+U 1 1 599368AB
+P 4650 5800
+F 0 "C4" H 4675 5900 50  0000 L CNN
+F 1 "C" H 4675 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4688 5650 50  0001 C CNN
+F 3 "" H 4650 5800 50  0001 C CNN
+	1    4650 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 6900 3000 6900
+Wire Wire Line
+	4950 6800 4950 7200
+Wire Wire Line
+	4350 7100 4350 7500
+Wire Wire Line
+	4350 7500 4950 7500
+Wire Wire Line
+	3000 2150 2650 2150
+Wire Wire Line
+	3000 1350 3000 2150
+Wire Wire Line
+	2700 1600 3000 1600
+Connection ~ 3000 1600
+Wire Wire Line
+	2650 2550 4050 2550
+Wire Wire Line
+	2650 2750 4050 2750
+Wire Wire Line
+	3250 1700 3250 1350
+Wire Wire Line
+	3600 1350 3600 1700
+Wire Wire Line
+	3950 1350 3950 1700
+Wire Wire Line
+	3950 2750 3950 2000
+Connection ~ 3950 2750
+Wire Wire Line
+	3600 2000 3600 2550
+Connection ~ 3600 2550
+Wire Wire Line
+	3250 2350 3250 2000
+Wire Wire Line
+	2650 2350 3250 2350
+Wire Wire Line
+	3100 3050 3100 2350
+Connection ~ 3100 2350
+Wire Wire Line
+	3300 3050 3700 3050
+Wire Wire Line
+	4350 5750 4350 5900
+Wire Wire Line
+	4350 5800 4500 5800
+Connection ~ 4350 5800
+Wire Wire Line
+	4800 5800 4950 5800
+Wire Wire Line
+	2500 6700 3750 6700
+Wire Wire Line
+	2500 7000 3750 7000
+Wire Wire Line
+	3750 7000 3750 6900
+$Comp
+L C C1
+U 1 1 5993707D
+P 2350 6700
+F 0 "C1" H 2375 6800 50  0000 L CNN
+F 1 "C" H 2375 6600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 6550 50  0001 C CNN
+F 3 "" H 2350 6700 50  0001 C CNN
+	1    2350 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 599370EB
+P 2350 7000
+F 0 "C3" H 2375 7100 50  0000 L CNN
+F 1 "C" H 2375 6900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 6850 50  0001 C CNN
+F 3 "" H 2350 7000 50  0001 C CNN
+	1    2350 7000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2850 6700
+Connection ~ 2850 7000
+Wire Wire Line
+	2200 6700 2200 7250
+Text GLabel 1950 7250 0    60   Input ~ 0
+GND
+Wire Wire Line
+	2200 7250 1950 7250
+Connection ~ 2200 7000
 $EndSCHEMATC
