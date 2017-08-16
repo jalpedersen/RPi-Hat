@@ -682,4 +682,23 @@ F 3 "" H 6100 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 1550 5900 1650
+$Comp
+L LED_RABG D1
+U 1 1 59939910
+P 6950 1450
+F 0 "D1" H 6950 1820 50  0000 C CNN
+F 1 "LED_RABG" H 6950 1100 50  0000 C CNN
+F 2 "LEDs:LED_WS2812B-PLCC4" H 6950 1400 50  0001 C CNN
+F 3 "" H 6950 1400 50  0001 C CNN
+	1    6950 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 1450 2    60   Input ~ 0
+3.3V
+Text GLabel 6750 1250 0    60   Input ~ 0
+Pin29
+Text GLabel 6750 1650 0    60   Input ~ 0
+Pin31
+Text GLabel 6750 1450 0    60   Input ~ 0
+Pin33
 $EndSCHEMATC
