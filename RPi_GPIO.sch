@@ -425,12 +425,6 @@ Text GLabel 3700 3050 2    60   Input ~ 0
 GND
 Text GLabel 2200 1600 0    60   Input ~ 0
 GND
-Text GLabel 3250 1350 1    60   Input ~ 0
-3.3V
-Text GLabel 3600 1350 1    60   Input ~ 0
-3.3V
-Text GLabel 3950 1350 1    60   Input ~ 0
-3.3V
 $Comp
 L CONN_02X06 J3
 U 1 1 598CFBC4
@@ -551,18 +545,12 @@ Wire Wire Line
 Wire Wire Line
 	3000 1350 3000 2150
 Wire Wire Line
-	2700 1600 3000 1600
+	2700 1600 3950 1600
 Connection ~ 3000 1600
 Wire Wire Line
 	2650 2550 4050 2550
 Wire Wire Line
 	2650 2750 4050 2750
-Wire Wire Line
-	3250 1700 3250 1350
-Wire Wire Line
-	3600 1350 3600 1700
-Wire Wire Line
-	3950 1350 3950 1700
 Wire Wire Line
 	3950 2750 3950 2000
 Connection ~ 3950 2750
@@ -682,23 +670,12 @@ F 3 "" H 6100 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 1550 5900 1650
-$Comp
-L LED_RABG D1
-U 1 1 59939910
-P 6950 1450
-F 0 "D1" H 6950 1820 50  0000 C CNN
-F 1 "LED_RABG" H 6950 1100 50  0000 C CNN
-F 2 "LEDs:LED_WS2812B-PLCC4" H 6950 1400 50  0001 C CNN
-F 3 "" H 6950 1400 50  0001 C CNN
-	1    6950 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 7150 1450 2    60   Input ~ 0
-3.3V
-Text GLabel 6750 1250 0    60   Input ~ 0
-Pin29
-Text GLabel 6750 1650 0    60   Input ~ 0
-Pin31
-Text GLabel 6750 1450 0    60   Input ~ 0
-Pin33
+Wire Wire Line
+	3250 1600 3250 1700
+Wire Wire Line
+	3600 1600 3600 1700
+Connection ~ 3250 1600
+Wire Wire Line
+	3950 1600 3950 1700
+Connection ~ 3600 1600
 $EndSCHEMATC
